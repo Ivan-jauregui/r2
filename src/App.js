@@ -1,23 +1,37 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Gallery from './Gallery';
+import Form from './Form';
+import AdivinarNumero from './AdivinarNumero';
+import ButtonEffect from './ButtonEffect';
+import Notes from './Notes';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <section className="component">
+        <h2>Galería de Imágenes</h2>
+        <Gallery />
+      </section>
+
+      <section className="component">
+        <Form />
+      </section>
+
+      <section className="component">
+        <h2>Juego de Adivinar Número</h2>
+        <AdivinarNumero />
+      </section>
+
+      <section className="component">
+        <h2>Botones de Clic y Doble Clic</h2>
+        <ButtonEffect />
+      </section>
+
+      <section className="component">
+        <Notes />
+      </section>
     </div>
   );
 }
